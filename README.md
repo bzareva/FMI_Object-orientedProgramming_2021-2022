@@ -8,7 +8,6 @@
     
    `План на курса по ООП` - темите, които ще се изучават в курса по ооп
 
-   `Разписание по седмици` - разписание по седмици на обхванатите теми
 
 # Object-oriented programming C++
 
@@ -19,5 +18,3 @@
   `<number>_<topic>` - here will be used basic examples, tasks and solutions within a given <topic>, set and solved during the workshop </br>
   
    `Plan of the course on OOP` - the topics that will be studied in the course OOP </br>
-   
-   `Weekly schedule` - weekly schedule of the topics covered </br>
