@@ -31,6 +31,11 @@ ComplexNumber sumOfComplexNumber(const ComplexNumber& compNum1, const ComplexNum
     ComplexNumber result;
     result.real      = compNum1.real + compNum2.real;
     result.imaginary = compNum1.imaginary + compNum2.imaginary;
+    
+    /* 
+    * Second way:
+    * ComplexNumber result{ compNum1.real + compNum2.real , compNum1.imaginary + compNum2.imaginary };
+    */
     return result;
 }
 
