@@ -251,8 +251,17 @@ void saleApartment(Apartment& apartment, const Person& newOwner) {
 	strcpy_s(apartment.owner.name, MAX_LEN, newOwner.name);
 }
 
-int main() {
+void searchApartment(Apartment arrApartment[], const double& rent, const size_t& numOfApartment) {
 
+	for (size_t i = 0; i < numOfApartment; ++i) {
+
+		if (arrApartment[i].rent == rent || (arrApartment[i].rent <= rent + 150 || arrApartment[i].rent >= rent - 150)) {
+			printAddress(arrApartment[i].addressApartment);
+		}
+	}
+}
+
+int main() {
 
 	return 0;
 }
