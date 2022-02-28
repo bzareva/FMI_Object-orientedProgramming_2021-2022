@@ -26,7 +26,7 @@ void printComplexNumber(const ComplexNumber& compNum) {
     std::cout << std::endl;
 }
 
-ComplexNumber sumOfComplexNumber(const ComplexNumber& compNum1, const ComplexNumber& compNum2) {
+ComplexNumber sumOfComplexNumbers(const ComplexNumber& compNum1, const ComplexNumber& compNum2) {
 
     ComplexNumber result;
     result.real      = compNum1.real + compNum2.real;
@@ -47,13 +47,13 @@ int main() {
     ComplexNumber compNum2;
     readComplexNumber(compNum2);
 
-    printComplexNumber(sumOfComplexNumber(compNum1, compNum2));
+    printComplexNumber(sumOfComplexNumbers(compNum1, compNum2));
 
 
     ComplexNumber compNum3 = { 7, 1 };  // 7 + 1i
     ComplexNumber compNum4 = { 8, 2 };  // 8 + 2i
 
-    ComplexNumber result = sumOfComplexNumber(compNum3, compNum4);
+    ComplexNumber result = sumOfComplexNumbers(compNum3, compNum4);
     printComplexNumber(result);
     
 
@@ -65,7 +65,7 @@ int main() {
     compNum6.real = 10;
     compNum6.imaginary = 11;
 
-    printComplexNumber(sumOfComplexNumber(compNum5, compNum6));
+    printComplexNumber(sumOfComplexNumbers(compNum5, compNum6));
 
     return 0;
 }
