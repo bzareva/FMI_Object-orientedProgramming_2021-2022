@@ -243,6 +243,14 @@ bool gavesToRent(Apartment& apartment) {
 	return true;
 }
 
+void saleApartment(Apartment& apartment, const Person& newOwner) {
+
+	apartment.owner.eyes = newOwner.eyes;
+	apartment.owner.hair = newOwner.hair;
+	apartment.owner.year = newOwner.year;
+	strcpy_s(apartment.owner.name, MAX_LEN, newOwner.name);
+}
+
 int main() {
 
 
