@@ -1,17 +1,27 @@
 #include <iostream>
 
+// Комплексно число представялващо две числа- real е реалната част, а imaginary е имагинерната част
 struct ComplexNumber {
 
     double real;
     double imaginary;
 };
 
+/*
+ * Функция, която чете от конзолата едно комплексно число. Подава се по псевдоним, в противен
+ * случай ще се работи с локалното копие, а не с обекта, който сме подали като параметър на функцията.
+*/
 void readComplexNumber(ComplexNumber& compNum) {
 
     std::cout << "Enter complex number:";
     std::cin >> compNum.real >> compNum.imaginary;
 }
 
+/*
+ * Отпечатва на конзолата комплексното число.
+ * Типът на параметъра е константен, защото няма да променяме подадения обект.
+ * Референцията е за да избегнем копиране на обекта.
+*/
 void printComplexNumber(const ComplexNumber& compNum) {
 
     std::cout << compNum.real;
@@ -26,16 +36,15 @@ void printComplexNumber(const ComplexNumber& compNum) {
     std::cout << std::endl;
 }
 
+// Функция, която събира две комплексни числа.
 ComplexNumber sumOfComplexNumbers(const ComplexNumber& compNum1, const ComplexNumber& compNum2) {
 
+    // Друг начин за инициализация на комплексното число result 
+    // ComplexNumber result{ compNum1.real + compNum2.real , compNum1.imaginary + compNum2.imaginary };
+    
     ComplexNumber result;
     result.real      = compNum1.real + compNum2.real;
     result.imaginary = compNum1.imaginary + compNum2.imaginary;
-    
-    /* 
-    * Second way:
-    * ComplexNumber result{ compNum1.real + compNum2.real , compNum1.imaginary + compNum2.imaginary };
-    */
     return result;
 }
 
