@@ -50,8 +50,8 @@ int main() {
     printComplexNumber(sumOfComplexNumbers(compNum1, compNum2));
 
 
-    ComplexNumber compNum3 = { 7, 1 };  // 7 + 1i
-    ComplexNumber compNum4 = { 8, 2 };  // 8 + 2i
+    ComplexNumber compNum3 = { 7, 1 };  
+    ComplexNumber compNum4 = { 8, 2 };  
 
     ComplexNumber result = sumOfComplexNumbers(compNum3, compNum4);
     printComplexNumber(result);
