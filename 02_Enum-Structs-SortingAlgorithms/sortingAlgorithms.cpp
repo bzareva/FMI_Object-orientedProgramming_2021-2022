@@ -26,7 +26,6 @@ void selectionSort(int arr[], const size_t& size) {
         }
 
         if (minInd != i) {
-
             swap(arr[i], arr[minInd]);
         }
     }
