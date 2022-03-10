@@ -48,7 +48,7 @@ void bubbleSort(int arr[], const size_t& size) {
             }
         }
 
-        if (isSwap == false) {
+        if (!isSwap) {
             break;
         }
     }
