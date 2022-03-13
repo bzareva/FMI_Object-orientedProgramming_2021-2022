@@ -1,7 +1,7 @@
 #include<iostream>
 #include<fstream>
 
-bool isLowerAlpha(const char& ch) {
+bool isLowerAlpha(char ch) {
 
 	return (ch >= 'a' && ch <= 'z');
 }
