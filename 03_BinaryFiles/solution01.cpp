@@ -27,7 +27,6 @@ void writeInBinFile(const char* fileName) {
 	for (size_t i = 0; i < cnt; ++i) {
 
 		std::cin >> symbol;
-		//std::cin.ignore();
 
 		ofs.write((const char*)&symbol, sizeof(char));
 
