@@ -4,10 +4,11 @@
 
 # Организация на хранилището:
 
-  `<номер>_<тема>` - тук ще намерите базови примери, задачи и решения в рамките на дадена <тема>, задавани и решавани по време на практикума
+  `<номер>_<тема>` - тук ще намерите базови примери, задачи и решения в рамките на дадена <тема>, задавани и решавани по време на практикума </br>
     
-   `План на курса по ООП` - темите, които ще се изучават в курса по ООП
+   `План на курса по ООП` - темите, които ще се изучават в курса по ООП </br>
 
+   `StudyMaterials` - материали за четене и задачи за подготовка </br>
 
 # Object-oriented programming C++
 
@@ -18,3 +19,5 @@
   `<number>_<topic>` - here will be used basic examples, tasks and solutions within a given <topic>, set and solved during the workshop </br>
   
    `Plan of the course on OOP` - the topics that will be studied in the course OOP </br>
+   
+   `StudyMaterials` - study materials and preparation tasks </br>
