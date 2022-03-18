@@ -16,7 +16,7 @@ private:
 public:
 
 	// добавя във върха символ, ако не е пълен
-	void push(const char ch);
+	void push(char ch);
 
 	// изтрива върха на стека, ако не е празен
 	char pop();
@@ -34,7 +34,7 @@ public:
 	void setItems(const char* newItems);
 
 	// set метод за върха на стека
-	void setTop(const int newTop);
+	void setTop(int newTop);
 
 	// get метод за елементите на стека
 	const char* getItems()const;
@@ -44,7 +44,7 @@ public:
 	
 };
 
-void Stack::push(const char ch) {
+void Stack::push(char ch) {
 
 	if (isFull()) {
 
@@ -97,7 +97,7 @@ void Stack::setItems(const char* newItems) {
 	items[len] = '\0';
 }
 
-void Stack::setTop(const int newTop) {
+void Stack::setTop(int newTop) {
 
 	if (newTop < 0) {
 		top = 0;
