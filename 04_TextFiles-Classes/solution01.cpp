@@ -25,10 +25,10 @@ public:
 	void print()const;
 
 	// внася пари от банкова сметка
-	bool paymentOfAnAmount(const double amount);
+	bool paymentOfAnAmount(double amount);
 
 	// тегли пари от банкова сметка
-	bool drawOfAnAmount(const double amount);
+	bool drawOfAnAmount(double amount);
 
 	// прочитане на банковата сметка от текстов файл
 	void read(ifstream& fin);
@@ -37,7 +37,7 @@ public:
 	void write(ofstream& fout)const;
 
 	// set метод за balance
-	void setBalance(const double newBalance);
+	void setBalance(double newBalance);
 
 	// set метод за bank account number
 	void setAccountNumber(const char* newAccountNumber);
@@ -62,7 +62,7 @@ void BankAccount::print()const {
 		 << "Balance: " << balance << endl;
 }
 
-bool BankAccount::paymentOfAnAmount(const double amount) {
+bool BankAccount::paymentOfAnAmount(double amount) {
 
 	if (amount < 0) return false;
 
@@ -71,7 +71,7 @@ bool BankAccount::paymentOfAnAmount(const double amount) {
 	return true;
 }
 
-bool BankAccount::drawOfAnAmount(const double amount) {
+bool BankAccount::drawOfAnAmount(double amount) {
 
 	if (amount < 0 || amount <= balance) return false;
 
