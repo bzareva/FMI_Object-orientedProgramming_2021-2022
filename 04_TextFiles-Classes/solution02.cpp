@@ -10,8 +10,8 @@ class Stack {
 
 private:
 
-	int top;
-	char   items[MaxSize];
+	int  top;
+	char items[MaxSize];
 
 public:
 
@@ -90,7 +90,7 @@ void Stack::setItems(const char* newItems) {
 
 	int len = strlen(newItems);
 
-	for (int i = 0; i < len && len < 1024; ++i) {
+	for (int i = 0; i < len && len < MaxSize; ++i) {
 		items[i] = newItems[i];
 	}
 
@@ -100,8 +100,8 @@ void Stack::setItems(const char* newItems) {
 void Stack::setTop(int newTop) {
 
 	if (newTop < 0) {
+		
 		top = 0;
-
 	} else {
 		top = newTop;
 	}
