@@ -27,7 +27,7 @@ struct Fruit {
     TypeFruit type;
 };
 
-void createFruit(Fruit fruit) {
+void createFruit(Fruit& fruit) {
 
     char input[SIZE]{ '\0' };
     std::cin.getline(input, SIZE);
@@ -114,7 +114,7 @@ void printFruit(const Fruit& fruit) {
 }
 
 // извеждане на едномерен масив от плодове
-void printFruits(const Fruit arr[], const size_t& size) {
+void printFruits(const Fruit arr[], size_t size) {
 
     for (size_t i = 0; i < size; ++i) {
         printFruit(arr[i]);
@@ -171,7 +171,7 @@ void swapFruits(Fruit& f1, Fruit& f2) {
 }
 
 // извежда едногодишните плодове с даден цвят, записани в масива, сортирани в масива във възходящ ред по име на плода
-void OneYearOldWithColor(Fruit arr[], const size_t& size, const Colors& givenColor) {
+void OneYearOldWithColor(Fruit arr[], size_t size, const Colors& givenColor) {
     
     //  сортираме във възходящ ред по име на плода
     bool isSwap;
@@ -204,7 +204,7 @@ void OneYearOldWithColor(Fruit arr[], const size_t& size, const Colors& givenCol
 }
 
 // извежда многогодишните, тропически плодове с даден цвят, сортирани в низходящ ред по име на плода
-void perennialTropicalWithColor(Fruit arr[], const size_t& size, const Colors& givenColor) {
+void perennialTropicalWithColor(Fruit arr[], size_t size, const Colors& givenColor) {
 
     // сортираме в низходящ ред по име на плода
     bool isSwap;
