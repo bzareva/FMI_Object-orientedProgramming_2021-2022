@@ -65,11 +65,11 @@ int main() {
 
     const size_t SIZE = 8;
 
-    int arr[] = { 31, 2, 3, 4, 5, 6, 12, 11 };
+    int arr[SIZE] = { 31, 2, 3, 4, 5, 6, 12, 11 };
     selectionSort(arr, SIZE);
     printArray(arr, SIZE);
 
-    int brr[] = { 45, 10, 23, 4, 9, 1, 70, 12 };
+    int brr[SIZE] = { 45, 10, 23, 4, 9, 1, 70, 12 };
     bubbleSort(brr, SIZE);
     printArray(brr, SIZE);
 
