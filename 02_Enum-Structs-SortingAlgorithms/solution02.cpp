@@ -44,7 +44,7 @@ void swapPersons(Person& p1, Person& p2) {
     p2.years = tempYears;
 }
 
-void sortPersons(Person arr[], const size_t size) {
+void sortPersons(Person arr[], size_t size) {
 
     bool isSwap;
 
@@ -86,7 +86,7 @@ void swapSubjects(Subject& p1, Subject& p2) {
     p2.mark = tempMark;
 }
 
-void sortSubjects(Subject arr[], const size_t size) {
+void sortSubjects(Subject arr[], size_t size) {
 
     bool isSwap;
 
@@ -172,7 +172,7 @@ void swapStudent(Student& s1, Student& s2) {
     }
 }
 
-void sortStudentsFN(Student arr[], const size_t size) {
+void sortStudentsFN(Student arr[], size_t size) {
 
     bool isSwap;
 
@@ -194,7 +194,7 @@ void sortStudentsFN(Student arr[], const size_t size) {
     }
 }
 
-void sortStudentsYears(Student arr[], const size_t size) {
+void sortStudentsYears(Student arr[], size_t size) {
 
     bool isSwap;
 
