@@ -129,7 +129,7 @@ void BankAccount::write(ofstream& fout)const {
 		 << "Balance: " << balance << endl;
 }
 
-void BankAccount::setBalance(const double newBalance) {
+void BankAccount::setBalance(double newBalance) {
 
 	if (newBalance < 0) {
 		balance = 5;
