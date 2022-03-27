@@ -60,3 +60,24 @@ void EventLog::setCapacity(size_t cap) {
 		capacity = cap;
 	}
 }
+
+Event EventLog::getEventAt(size_t index)const {
+
+	if (index < 0 || index > currentSize) {
+		// throw "Invalid index";
+		std::cout << "Invalid index!\n";
+		return events[0];
+	}
+
+	return events[index];
+}
+
+size_t EventLog::getSize()const {
+
+	return currentSize;
+}
+
+size_t EventLog::getCapacity()const {
+
+	return capacity;
+}
