@@ -18,6 +18,10 @@ public:
 	void print()const;
 	void setSize(size_t size);
 	void setCapacity(size_t cap);
+	
+	Event getEventAt(size_t index)const;
+	size_t getSize()const;
+	size_t getCapacity()const;
 };
 
 #endif // EVENT_LOG_H
