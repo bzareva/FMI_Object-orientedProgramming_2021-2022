@@ -1,4 +1,3 @@
-#pragma once
 #ifndef _SHOP_BUDGET_H_
 #define _SHOP_BUDGET_H_
 
