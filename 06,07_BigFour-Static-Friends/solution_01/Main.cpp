@@ -19,7 +19,7 @@ int main()
 	
 	ShopBudget shop(5, goods);
 
-	if (shop.sale(p4) || shop.sale(p1) || shop.sale(p3))
+	if (shop.sale(p4) && shop.sale(p1) && shop.sale(p3))
 	{
 		std::cout << shop.getBudget() << std::endl;
 	}
