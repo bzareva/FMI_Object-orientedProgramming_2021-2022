@@ -5,6 +5,14 @@
 
 class Vector {
 
+private:
+
+	unsigned size;
+	unsigned capacity;
+	int* data;
+	
+	static const unsigned VECTOR_CAPACITY;
+	
 public:
 
 	Vector();
@@ -37,14 +45,6 @@ private:
 
 	void copy(const Vector& rhs);
 	void free();
-
-private:
-
-	unsigned size;
-	unsigned capacity;
-	int* data;
-
-	static const unsigned VECTOR_CAPACITY;
 
 };
 
