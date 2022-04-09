@@ -8,13 +8,13 @@ class String {
 private:
 
 	unsigned size;
-	char*    string;
+	char* string;
 
 public:
 
 	String(const char* str = "default");
 	String(const String& rhs);
-    String& operator=(const String& rhs);
+        String& operator=(const String& rhs);
 	~String();
 
 	char& at(unsigned index);
