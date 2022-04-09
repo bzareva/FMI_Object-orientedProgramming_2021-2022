@@ -10,8 +10,6 @@ private:
 	unsigned size;
 	char*    string;
 
-	static const unsigned RESIZE;
-
 public:
 
 	String(const char* str = "default");
