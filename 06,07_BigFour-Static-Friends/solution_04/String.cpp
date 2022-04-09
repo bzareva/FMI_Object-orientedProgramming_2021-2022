@@ -1,7 +1,5 @@
 #include "String.h"
 
-const unsigned String::RESIZE = 2;
-
 String::String(const char* str) :size(strLen(str))
 {
 	string = new char[size + 1];
