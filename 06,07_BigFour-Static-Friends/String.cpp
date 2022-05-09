@@ -1,4 +1,6 @@
 
+// author  Michael Zarkov 
+
 #include <iostream>
 #include <cstring>
 #include "String.h"
