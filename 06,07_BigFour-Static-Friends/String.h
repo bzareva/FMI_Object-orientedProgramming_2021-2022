@@ -1,3 +1,6 @@
+
+// author  Michael Zarkov 
+
 #pragma once
 #pragma warning (disable : 4996)
 
