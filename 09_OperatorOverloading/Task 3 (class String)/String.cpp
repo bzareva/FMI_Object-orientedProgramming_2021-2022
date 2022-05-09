@@ -1,4 +1,5 @@
-﻿
+﻿// author  Michael Zarkov 
+
 #include <iostream>
 #include <cstring>
 #include <algorithm>		// std::reverse in operator*=
